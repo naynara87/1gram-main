@@ -537,7 +537,19 @@
 
     <script src="assets/js/pages/aos/aos.js" class=""></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/pages/slick.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
 
+        $('.auto-play').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
     <!--begin:: 메인인터렉션 모달 -->
     <div class="modal fade bg-dark-o-50" id="mainTest-01" tabindex="-1" aria-labelledby="titleInput" aria-modal="true"
         role="dialog">
