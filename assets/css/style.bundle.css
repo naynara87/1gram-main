@@ -80998,7 +80998,7 @@ select::-ms-expand {
   }
 
   .sec-01 .main-logo {
-    width: 240px;
+    max-width: 240px;
   }
 }
 .sec-02 {
@@ -81543,7 +81543,7 @@ select::-ms-expand {
 }
 .sec-05 .vdo-contents-list .vdo-contents-wrap {
   display: flex;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .sec-05 .vdo-contents-list .vdo-contents-wrap .vdo-contents {
   padding: 30px;
@@ -81560,6 +81560,20 @@ select::-ms-expand {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.slick-slide {
+  min-width: 300px;
+}
+
+.slick-arrow {
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-list {
+  height: 250px;
 }
 
 .sec-05 .card img {
@@ -81584,11 +81598,12 @@ select::-ms-expand {
     margin: 15px auto;
   }
 
-  .vdo-contents-list .vdo-contents-button .prev {
-    top: 50px;
+  .vdo-contents-list .vdo-contents-wrap {
+    height: 218px;
   }
-  .vdo-contents-list .vdo-contents-button .next {
-    top: 50px;
+
+  .slick-arrow {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -81596,7 +81611,7 @@ select::-ms-expand {
     font-size: 9vw;
   }
 
-  .vdo-contents-list .vdo-contents-button {
+  .slick-arrow {
     display: none;
   }
 }
